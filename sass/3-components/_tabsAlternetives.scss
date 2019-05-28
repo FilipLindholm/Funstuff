@@ -1,0 +1,78 @@
+// CSS FOR ACCORDIAN
+
+.alternetives-title {
+  display: none;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1em;
+  color: #fff;
+  border-bottom: 1px solid rgb(247, 247, 247);
+  background-image: $tab;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 500ms;
+
+  &.active {
+    background-image: $tabActive;
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+
+  &::after {
+    content: "\276f";
+    @include APC-Medium;
+    right: 1em;
+    position: absolute;
+    transition: all 300ms;
+  }
+
+  @include mq(s) {
+    display: block;
+  }
+}
+
+.tab-content-alt {
+  display: none;
+}
+
+// TABS DESKTOP
+
+.box-tabs-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  @include mq(s) {
+    display: none !important;
+  }
+}
+
+.box-tabs {
+  margin: 10px 10px 50px 10px;
+  background-image: linear-gradient(
+    to right top,
+    #212220,
+    #2c2d2a,
+    #373833,
+    #43433e,
+    #4f4f48
+  );
+  color: #fff;
+  padding: 15px 5% 15px 5%;
+  clip-path: polygon(7% 0%, 100% 0%, 94% 99%, 0% 100%);
+  @include APC-Medium-Italic;
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+
+  &.active {
+    background-image: $tabActive;
+  }
+
+  > span {
+    display: block;
+  }
+}

@@ -1,0 +1,52 @@
+// **** FONT MIXINS ***** //
+
+@mixin AP-Black-Italic() {
+  font-family: AcuminPro, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+@mixin APC-Bold-Italic() {
+  font-family: AcuminProCond, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+@mixin APC-SemiBold-Italic() {
+  font-family: AcuminProCond, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+@mixin APC-Bold-Italic() {
+  font-family: AcuminProCond, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+@mixin APC-Medium-Italic() {
+  font-family: AcuminProCond, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+@mixin APC-Medium() {
+  font-family: AcuminProCond, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+@mixin APC-Regular-Italic() {
+  font-family: AcuminProCond, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+@mixin APC-Light-Italic() {
+  font-family: AcuminProCond, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+@mixin APC-Regular() {
+  font-family: AcuminProCond, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+@mixin APC-Light() {
+  font-family: AcuminProCond, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}

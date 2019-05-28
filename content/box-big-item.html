@@ -1,0 +1,881 @@
+<script>
+  $(".panel2").hide();
+
+  $(".tabs")
+    .find("a")
+    .on("click", function(e) {
+      var tabs = $(this).closest(".tab-panels");
+      e.preventDefault();
+
+      tabs.find(".active").removeClass("active");
+      $(this)
+        .closest(".tabs li")
+        .addClass("active");
+
+      var newTab = $(this.hash);
+      var newHeight = newTab.outerHeight();
+      var container = tabs.parent(".text-long, .text");
+
+      newTab.siblings(":visible").fadeOut("fast");
+      container.animate({ height: newHeight + 70 }, 300, function() {
+        newTab.fadeIn("fast");
+      });
+
+      newTab.fadeIn("fast");
+    });
+</script>
+
+<div class="box-big-item-wrap">
+  <div class="box-big-item">
+    <div class="image">
+      <div class="new-icon-s">
+        <span>Nyhet</span>
+      </div>
+      <div class="product-image">
+        <img src="img/related-product-2.jpg" alt="" />
+      </div>
+      <div class="product-image-overlay"></div>
+    </div>
+    <div class="text">
+      <div class="tab-panels">
+        <ul class="tabs">
+          <li class="tab-left-big-item active">
+            <a href="#panel1">Produktbeskrivning</a>
+          </li>
+          <li class="tab-right-big-item">
+            <a href="#panel2">Specifikationer</a>
+          </li>
+        </ul>
+
+        <div class="box-content">
+          <div id="panel1" class="panel active">
+            <div class="text-wrap">
+              <a href="" class="title">Glock 19 Blowback 4,5mm</a>
+              <div class="price">
+                <span>1 995 kr</span>
+                <span>2 995 kr</span>
+              </div>
+              <div class="rating">
+                <img src="img/rating.png" alt="" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia, omnis illo iste ratione. Numquam eveniet quo, ullam
+                itaque expedita impedit. Eveniet, asperiores amet iste
+                repellendus similique reiciendis, maxime laborum praesentium.
+              </p>
+              <div class="egenskaper-big-box">
+                <ul>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                  <li>
+                    <img src="img/egenskaper/Diabolokula-4,5mm.png" alt="" />
+                  </li>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="panel2" class="panel panel2">
+            <div class="spec-wrap">
+              <table>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="purchase-big-box">
+        <div class="qty">
+          <span class="plus-button"> + </span>
+          <input type="text" name="qty" id="qty" placeholder="1" />
+          <span class="min-button"> &minus; </span>
+        </div>
+        <div class="button">
+          <span>köp</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-big-item">
+    <div class="image">
+      <div class="new-icon-s">
+        <span>Nyhet</span>
+      </div>
+      <div class="product-image">
+        <img src="img/related-product-2.jpg" alt="" />
+      </div>
+      <div class="product-image-overlay"></div>
+    </div>
+    <div class="text">
+      <div class="tab-panels">
+        <ul class="tabs">
+          <li class="tab-left-big-item active">
+            <a href="#panel3">Produktbeskrivning</a>
+          </li>
+          <li class="tab-right-big-item">
+            <a href="#panel4">Specifikationer</a>
+          </li>
+        </ul>
+
+        <div class="box-content">
+          <div id="panel3" class="panel active">
+            <div class="text-wrap">
+              <a href="" class="title">Glock 19 Blowback 4,5mm</a>
+              <div class="price">
+                <span>1 995 kr</span>
+                <span>2 995 kr</span>
+              </div>
+              <div class="rating">
+                <img src="img/rating.png" alt="" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia, omnis illo iste ratione. Numquam eveniet quo, ullam
+                itaque expedita impedit. Eveniet, asperiores amet iste
+                repellendus similique reiciendis, maxime laborum praesentium.
+              </p>
+              <div class="egenskaper-big-box">
+                <ul>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                  <li>
+                    <img src="img/egenskaper/Diabolokula-4,5mm.png" alt="" />
+                  </li>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="panel4" class="panel panel2 ">
+            <div class="spec-wrap">
+              <table>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="purchase-big-box">
+        <div class="qty">
+          <span class="plus-button"> + </span>
+          <input type="text" name="qty" id="qty" placeholder="1" />
+          <span class="min-button"> &minus; </span>
+        </div>
+        <div class="button">
+          <span>köp</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-big-item">
+    <div class="image">
+      <div class="new-icon-s">
+        <span>Nyhet</span>
+      </div>
+      <div class="product-image">
+        <img src="img/related-product-2.jpg" alt="" />
+      </div>
+      <div class="product-image-overlay"></div>
+    </div>
+    <div class="text">
+      <div class="tab-panels">
+        <ul class="tabs">
+          <li class="tab-left-big-item active">
+            <a href="#panel5">Produktbeskrivning</a>
+          </li>
+          <li class="tab-right-big-item">
+            <a href="#panel6">Specifikationer</a>
+          </li>
+        </ul>
+
+        <div class="box-content">
+          <div id="panel5" class="panel active">
+            <div class="text-wrap">
+              <a href="" class="title">Glock 19 Blowback 4,5mm</a>
+              <div class="price">
+                <span>1 995 kr</span>
+                <span>2 995 kr</span>
+              </div>
+              <div class="rating">
+                <img src="img/rating.png" alt="" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia, omnis illo iste ratione. Numquam eveniet quo, ullam
+                itaque expedita impedit. Eveniet, asperiores amet iste
+                repellendus similique reiciendis, maxime laborum praesentium.
+              </p>
+              <div class="egenskaper-big-box">
+                <ul>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                  <li>
+                    <img src="img/egenskaper/Diabolokula-4,5mm.png" alt="" />
+                  </li>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="panel6" class="panel panel2  ">
+            <div class="spec-wrap">
+              <table>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="purchase-big-box">
+        <div class="qty">
+          <span class="plus-button"> + </span>
+          <input type="text" name="qty" id="qty" placeholder="1" />
+          <span class="min-button"> &minus; </span>
+        </div>
+        <div class="button">
+          <span>köp</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-big-item">
+    <div class="image">
+      <div class="new-icon-s">
+        <span>Nyhet</span>
+      </div>
+      <div class="product-image">
+        <img src="img/related-product-2.jpg" alt="" />
+      </div>
+      <div class="product-image-overlay"></div>
+    </div>
+    <div class="text">
+      <div class="tab-panels">
+        <ul class="tabs">
+          <li class="tab-left-big-item active">
+            <a href="#panel7">Produktbeskrivning</a>
+          </li>
+          <li class="tab-right-big-item">
+            <a href="#panel8">Specifikationer</a>
+          </li>
+        </ul>
+
+        <div class="box-content">
+          <div id="panel7" class="panel active">
+            <div class="text-wrap">
+              <a href="" class="title">Glock 19 Blowback 4,5mm</a>
+              <div class="price">
+                <span>1 995 kr</span>
+                <span>2 995 kr</span>
+              </div>
+              <div class="rating">
+                <img src="img/rating.png" alt="" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia, omnis illo iste ratione. Numquam eveniet quo, ullam
+                itaque expedita impedit. Eveniet, asperiores amet iste
+                repellendus similique reiciendis, maxime laborum praesentium.
+              </p>
+              <div class="egenskaper-big-box">
+                <ul>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                  <li>
+                    <img src="img/egenskaper/Diabolokula-4,5mm.png" alt="" />
+                  </li>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            id="panel8"
+            class="panel panel2
+           "
+          >
+            <div class="spec-wrap">
+              <table>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="purchase-big-box">
+        <div class="qty">
+          <span class="plus-button"> + </span>
+          <input type="text" name="qty" id="qty" placeholder="1" />
+          <span class="min-button"> &minus; </span>
+        </div>
+        <div class="button">
+          <span>köp</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-big-item long">
+    <div class="image-long">
+      <div class="new-icon-s">
+        <span>Nyhet</span>
+      </div>
+      <div class="product-image">
+        <img src="img/big/product-long.jpg" alt="" />
+      </div>
+      <div class="product-image-overlay"></div>
+    </div>
+    <div class="text-long">
+      <div class="tab-panels">
+        <ul class="tabs">
+          <li class="tab-left-big-item active">
+            <a href="#panel9">Produktbeskrivning</a>
+          </li>
+          <li class="tab-right-big-item">
+            <a href="#panel10">Specifikationer</a>
+          </li>
+        </ul>
+
+        <div class="box-content">
+          <div id="panel9" class="panel active">
+            <div class="text-wrap">
+              <a href="" class="title">Glock 19 Blowback 4,5mm</a>
+              <div class="price">
+                <span>1 995 kr</span>
+                <span>2 995 kr</span>
+              </div>
+              <div class="rating">
+                <img src="img/rating.png" alt="" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia, omnis illo iste ratione. Numquam eveniet quo, ullam
+                itaque expedita impedit. Eveniet, asperiores amet iste
+                repellendus similique reiciendis, maxime laborum praesentium.
+              </p>
+              <div class="egenskaper-big-box">
+                <ul>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                  <li>
+                    <img src="img/egenskaper/Diabolokula-4,5mm.png" alt="" />
+                  </li>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            id="panel10"
+            class="panel panel2
+           "
+          >
+            <div class="spec-wrap">
+              <table>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="purchase-big-box">
+        <div class="qty">
+          <span class="plus-button"> + </span>
+          <input type="text" name="qty" id="qty" placeholder="1" />
+          <span class="min-button"> &minus; </span>
+        </div>
+        <div class="button">
+          <span>köp</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-big-item long">
+    <div class="image-long">
+      <div class="new-icon-s">
+        <span>Nyhet</span>
+      </div>
+      <div class="product-image">
+        <img src="img/big/product-long.jpg" alt="" />
+      </div>
+      <div class="product-image-overlay"></div>
+    </div>
+    <div class="text-long">
+      <div class="tab-panels">
+        <ul class="tabs">
+          <li class="tab-left-big-item active">
+            <a href="#panel11">Produktbeskrivning</a>
+          </li>
+          <li class="tab-right-big-item">
+            <a href="#panel12">Specifikationer</a>
+          </li>
+        </ul>
+
+        <div class="box-content">
+          <div id="panel11" class="panel active">
+            <div class="text-wrap">
+              <a href="" class="title">Glock 19 Blowback 4,5mm</a>
+              <div class="price">
+                <span>1 995 kr</span>
+                <span>2 995 kr</span>
+              </div>
+              <div class="rating">
+                <img src="img/rating.png" alt="" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia, omnis illo iste ratione. Numquam eveniet quo, ullam
+                itaque expedita impedit. Eveniet, asperiores amet iste
+                repellendus similique reiciendis, maxime laborum praesentium.
+              </p>
+              <div class="egenskaper-big-box">
+                <ul>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                  <li>
+                    <img src="img/egenskaper/Diabolokula-4,5mm.png" alt="" />
+                  </li>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            id="panel12"
+            class="panel panel2
+           "
+          >
+            <div class="spec-wrap">
+              <table>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="purchase-big-box">
+        <div class="qty">
+          <span class="plus-button"> + </span>
+          <input type="text" name="qty" id="qty" placeholder="1" />
+          <span class="min-button"> &minus; </span>
+        </div>
+        <div class="button">
+          <span>köp</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-big-item long">
+    <div class="image-long">
+      <div class="new-icon-s">
+        <span>Nyhet</span>
+      </div>
+      <div class="product-image">
+        <img src="img/big/product-long.jpg" alt="" />
+      </div>
+      <div class="product-image-overlay"></div>
+    </div>
+    <div class="text-long">
+      <div class="tab-panels">
+        <ul class="tabs">
+          <li class="tab-left-big-item active">
+            <a href="#panel13">Produktbeskrivning</a>
+          </li>
+          <li class="tab-right-big-item">
+            <a href="#panel14">Specifikationer</a>
+          </li>
+        </ul>
+
+        <div class="box-content">
+          <div id="panel13" class="panel active">
+            <div class="text-wrap">
+              <a href="" class="title">Glock 19 Blowback 4,5mm</a>
+              <div class="price">
+                <span>1 995 kr</span>
+                <span>2 995 kr</span>
+              </div>
+              <div class="rating">
+                <img src="img/rating.png" alt="" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia, omnis illo iste ratione. Numquam eveniet quo, ullam
+                itaque expedita impedit. Eveniet, asperiores amet iste
+                repellendus similique reiciendis, maxime laborum praesentium.
+              </p>
+              <div class="egenskaper-big-box">
+                <ul>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                  <li>
+                    <img src="img/egenskaper/Diabolokula-4,5mm.png" alt="" />
+                  </li>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            id="panel14"
+            class="panel panel2
+           "
+          >
+            <div class="spec-wrap">
+              <table>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="purchase-big-box">
+        <div class="qty">
+          <span class="plus-button"> + </span>
+          <input type="text" name="qty" id="qty" placeholder="1" />
+          <span class="min-button"> &minus; </span>
+        </div>
+        <div class="button">
+          <span>köp</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-big-item long">
+    <div class="image-long">
+      <div class="new-icon-s">
+        <span>Nyhet</span>
+      </div>
+      <div class="product-image">
+        <img src="img/big/product-long.jpg" alt="" />
+      </div>
+      <div class="product-image-overlay"></div>
+    </div>
+    <div class="text-long">
+      <div class="tab-panels">
+        <ul class="tabs">
+          <li class="tab-left-big-item active">
+            <a href="#panel15">Produktbeskrivning</a>
+          </li>
+          <li class="tab-right-big-item">
+            <a href="#panel16">Specifikationer</a>
+          </li>
+        </ul>
+
+        <div class="box-content">
+          <div id="panel15" class="panel active">
+            <div class="text-wrap">
+              <a href="" class="title">Glock 19 Blowback 4,5mm</a>
+              <div class="price">
+                <span>1 995 kr</span>
+                <span>2 995 kr</span>
+              </div>
+              <div class="rating">
+                <img src="img/rating.png" alt="" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia, omnis illo iste ratione. Numquam eveniet quo, ullam
+                itaque expedita impedit. Eveniet, asperiores amet iste
+                repellendus similique reiciendis, maxime laborum praesentium.
+              </p>
+              <div class="egenskaper-big-box">
+                <ul>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                  <li>
+                    <img src="img/egenskaper/Diabolokula-4,5mm.png" alt="" />
+                  </li>
+                  <li><img src="img/egenskaper/Blowback.png" alt="" /></li>
+                  <li><img src="img/egenskaper/Co2.png" alt="" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            id="panel16"
+            class="panel panel2
+           "
+          >
+            <div class="spec-wrap">
+              <table>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+                <tr>
+                  <td>Drivning</td>
+                  <td>Co2</td>
+                </tr>
+                <tr>
+                  <td>Märke</td>
+                  <td>Umarex</td>
+                </tr>
+                <tr>
+                  <td>Utgångshastighet</td>
+                  <td>120m/s</td>
+                </tr>
+                <tr>
+                  <td>Magasinkapacitet</td>
+                  <td>22 skott</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="purchase-big-box">
+        <div class="qty">
+          <span class="plus-button"> + </span>
+          <input type="text" name="qty" id="qty" placeholder="1" />
+          <span class="min-button"> &minus; </span>
+        </div>
+        <div class="button">
+          <span>köp</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

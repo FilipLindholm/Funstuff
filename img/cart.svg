@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <path id="iconmonstr-shopping-bag-4" d="M20 7h-4V4a4 4 0 0 0-8 0v3H4L2 24h20zM9 4a3 3 0 0 1 6 0v3H9zM4.249 22L5.778 9H8v1.5a.5.5 0 0 0 1 0V9h6v1.5a.5.5 0 0 0 1 0V9h2.222l1.529 13H4.249z" class="cls-1" transform="translate(-2)"/>
+</svg>

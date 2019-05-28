@@ -1,0 +1,226 @@
+.revslider-wrap {
+  margin-bottom: 100px;
+  margin-top: 80px;
+
+  // &:hover {
+  //  img {
+  //    transform: translateY(-50px) !important;
+  // }
+  // }
+}
+
+.rev_slider_wrapper {
+  margin: 0 2% !important;
+
+  @include mq(m) {
+    margin: 0 !important;
+  }
+}
+
+.rifle,
+img {
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+// ************** MINI BANNER **************//
+
+.mini-banners-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 110px;
+}
+
+.mini-banner-wrap {
+  width: 30%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+
+  &::before {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-top: 3px solid $miniBannerBorder;
+    border-bottom: 3px solid $miniBannerBorder;
+    box-sizing: border-box;
+    transform: scaleX(0);
+    transition: 0.5s;
+  }
+  &:hover::before {
+    transform: scaleX(1);
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-right: 3px solid $miniBannerBorder;
+    border-left: 3px solid $miniBannerBorder;
+    box-sizing: border-box;
+    transform: scaleY(0);
+    transition: 0.5s;
+  }
+  &:hover::after {
+    transform: scaleY(1);
+  }
+
+  @include mq(ml) {
+    width: 48%;
+  }
+
+  @include mq(s) {
+    width: 98%;
+  }
+
+  a {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transition: all 300ms;
+
+    &:before {
+      display: block;
+      content: "";
+      padding-top: (1000 / 1000) * 55%;
+
+      @include mq(s) {
+        padding-top: (1000 / 1000) * 40%;
+      }
+    }
+  }
+
+  &:hover {
+    .button {
+      bottom: 40%;
+    }
+    a {
+      transform: scale(1.1);
+      filter: brightness(80%);
+    }
+    .text {
+      opacity: 0;
+    }
+  }
+
+  .text {
+    position: absolute;
+    z-index: 2;
+    margin: 0 auto;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    transition: all 200ms;
+    h3 {
+      @include APC-Bold-Italic;
+      font-size: 5rem;
+      text-transform: uppercase;
+      text-shadow: 2px 3px 4px #232323;
+      width: 100%;
+
+      @include mq(l) {
+        font-size: 4rem;
+      }
+      @include mq(ml) {
+        font-size: 3.5rem;
+      }
+      @include mq(s) {
+        font-size: 5rem;
+      }
+    }
+    span {
+      font-size: 1.9rem;
+      text-shadow: 1px 2px 3px rgb(0, 0, 0);
+      @include APC-Medium-Italic;
+      width: 100%;
+      @include mq(l) {
+        font-size: 1.5rem;
+      }
+      @include mq(s) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .button {
+    z-index: 3;
+    position: absolute;
+    bottom: -20px;
+    width: 40%;
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid #b5b5b5;
+    left: 50%;
+    transform: translateX(-50%) skew(-15deg);
+    color: #222;
+    padding: 1em;
+    cursor: pointer;
+    box-shadow: 0px 10px 23px 0px rgba(0, 0, 0, 0.5);
+    transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover {
+      transform: scale(1.08) translateX(-48%) skew(-13deg);
+      background-color: rgba(33, 33, 33, 0.92);
+      color: #fff;
+    }
+    &:active {
+      background-color: rgba($color: #fff, $alpha: 0.92);
+      color: #222;
+    }
+
+    span {
+      transform: skew(25deg);
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      @include mq(ml) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+// ************** NYHETER **************//
+
+.slider-title {
+  margin: 0 2%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $greyBorder;
+
+  h4 {
+    @include APC-Bold-Italic;
+    font-size: 4.1rem;
+  }
+  a {
+    @include APC-Regular-Italic;
+    font-size: 2.3rem;
+    margin-left: 1%;
+    letter-spacing: -0.4px;
+    color: rgb(74, 74, 74);
+  }
+}
+
+.slider-startpage {
+  padding: 0 0 2% 0;
+  margin: 50px 0;
+}
+
+.slider-wrap {
+  padding: 0 1%;
+}

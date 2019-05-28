@@ -1,0 +1,29 @@
+html {
+  font-size: 62.5%; // 1rem= 10px  10px/16px = 62.5%
+
+  &.scroll-stop {
+    overflow: hidden;
+  }
+
+  @include mq(s) {
+    font-size: 55%;
+  }
+}
+
+body {
+  @include APC-SemiBold-Italic;
+  background-color: #eaeaea;
+  color: #393939;
+  overflow-x: hidden;
+}
+
+.main-wrap {
+  background-color: #eaeaea;
+  z-index: 2;
+  //position: relative;
+
+  @include mq(m) {
+    overflow-x: hidden;
+    padding-bottom: 100px;
+  }
+}

@@ -1,0 +1,34 @@
+// **** COLORS **** //
+
+$green: #99c21c;
+
+$greyBorder: #c9c9c9;
+
+$lightBlack: #262725;
+$darkBlack: #000000;
+
+$deal: #ac8a30;
+
+$miniBannerBorder: #fff;
+
+$navSlide: rgba(8, 8, 5, 0.74);
+
+// **** GRADIENTS **** //
+
+$tab: linear-gradient(
+  to right top,
+  #1e1f1d,
+  #2b2c2a,
+  #383a37,
+  #464845,
+  #555754
+);
+
+$tabActive: linear-gradient(
+  to right top,
+  #363636,
+  #535353,
+  #727272,
+  #929292,
+  #b4b4b4
+);

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.898 23.898">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2{clip-path:url(#clip-path)}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Path_10" d="M0 0h23.9v23.9H0z" class="cls-1" data-name="Path 10"/>
+        </clipPath>
+    </defs>
+    <g id="if_ic_compare_arrows_48px_3669373" class="cls-2">
+        <path id="Path_9" d="M10.98 18.962H4v1.992h6.98v2.987l3.973-3.983-3.973-3.983zm5.955-1v-2.983h6.98v-1.992h-6.98V10l-3.973 3.983z" class="cls-1" data-name="Path 9" transform="translate(-2.008 -5.021)"/>
+    </g>
+</svg>

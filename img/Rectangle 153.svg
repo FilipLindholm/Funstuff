@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 61 61">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        filter: url(#Rectangle_153);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.55" gradientTransform="translate(-0.09 0.11) rotate(-11.569)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5f5f5f"/>
+      <stop offset="1" stop-color="#262725"/>
+    </radialGradient>
+    <filter id="Rectangle_153" x="0" y="0" width="61" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.275"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <rect id="Rectangle_153-2" data-name="Rectangle 153" class="cls-1" width="49" height="49" rx="24.5" transform="translate(3 4)"/>
+  </g>
+</svg>
