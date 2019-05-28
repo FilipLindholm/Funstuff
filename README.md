@@ -1,11 +1,11 @@
 # Funstuff
 
-http://funstuff.se.preview.binero.se/startsida.php
+STARTSIDA: http://funstuff.se.preview.binero.se/startsida.php
 
-http://funstuff.se.preview.binero.se/produktsida.php
+PRODUKTSIDA: http://funstuff.se.preview.binero.se/produktsida.php
 
-http://funstuff.se.preview.binero.se/kategorisida.php
+KATEGORISIDA: http://funstuff.se.preview.binero.se/kategorisida.php
 
-
+ÖVERIGT:
 http://funstuff.se.preview.binero.se/kontakt.php
 http://funstuff.se.preview.binero.se/kopvillkor.php
